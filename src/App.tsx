@@ -1,10 +1,9 @@
-import LoginPage from "./modules/auth/pages/Login/auth-login";
-
+import { MainRoutes } from "./routes";
 
 export default function App() {
   return (
     <>
-      <LoginPage />
+      <MainRoutes />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { AuthHero } from "../../components/Hero/auth-hero";
 import AuthBackground from "@/assets/auth-background.png"
 
 
-export default function LoginPage() {
+export default function AuthLoginPage() {
   return (
     <main className="flex min-h-screen max-sm:justify-center md:justify-center flex-col bg-cover bg-center lg:flex-row" style={{ backgroundImage: `url(${AuthBackground})` }}>
     
