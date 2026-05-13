@@ -9,27 +9,28 @@ interface AuthHeroProps {
 
 export function AuthHero({ className }: AuthHeroProps) {
   return (
-    <div
+    <aside
       className={cn(
         "relative flex flex-col justify-center overflow-hidden px-8 py-12 lg:px-16 max-sm:hidden md:hidden lg:block",
         className,
       )}
+      aria-labelledby="auth-hero-title"
     >
       <div className="mb-4">
-        <img src={Brand} alt="Brand Materially" className="object-cover w-55" />
-      </div>
-
-      <h1 className="mb-4 text-4xl font-bold leading-tight text-white text-balance">
-        Sua central de controle e análise de dados
-      </h1>
-
-      <div className="relative">
         <img
-          src={AuthIlustration}
-          alt="Financial Illustration"
-          className="object-cover"
+          src={Brand}
+          alt="Logotipo Materially"
+          className="object-cover w-55"
         />
       </div>
-    </div>
+
+      <h2 id="auth-hero-title" className="mb-4 text-4xl font-bold leading-tight text-white text-balance">
+        Sua central de controle e análise de dados
+      </h2>
+
+      <div className="relative" aria-hidden="true">
+        <img src={AuthIlustration} alt="" className="object-cover" />
+      </div>
+    </aside>
   );
 }
